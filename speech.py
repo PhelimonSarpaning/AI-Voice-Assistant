@@ -6,7 +6,7 @@ import google
 # gets the mic ready and also allow the hardware to recognize voice
 r = sr.Recognizer()
 mic = sr.Microphone()
-# google.search_google("sharida holloway")
+# google.search_google("kwame nkrumah")
 
 say.say("Hey, what should I do?")
 # d = '/Applications'
@@ -28,8 +28,8 @@ while True:
 	with mic as source:
 				r.adjust_for_ambient_noise(source, duration=0.5)
 				audio = r.listen(source)
-				text = r.recognize_houndify(audio,"ZNksyHa1eV8uu1wUq7Pbaw==",
-				"_vz7PYsu2wLYqYXsmaLJOni5yZhBnxqDqWVv-zLqyPXa7GOGy7QFlbq0Y_3OwROgeWQdPXG5W6GNctL2loWGAQ==")
+				text = r.recognize_houndify(audio,"client_id",
+				"client_key")
 				print(text)
 	if call_assistant() == True:
 		try:
@@ -37,8 +37,8 @@ while True:
 			with mic as source:
 				r.adjust_for_ambient_noise(source)
 				audio = r.listen(source)
-				transcript = r.recognize_houndify(audio,"ZNksyHa1eV8uu1wUq7Pbaw==",
-				"_vz7PYsu2wLYqYXsmaLJOni5yZhBnxqDqWVv-zLqyPXa7GOGy7QFlbq0Y_3OwROgeWQdPXG5W6GNctL2loWGAQ==")
+				transcript = r.recognize_houndify(audio,"client_id",
+				"client_key")
 				print(transcript)
 				# checks to see if user wants to search google
 				phrase = " search "
