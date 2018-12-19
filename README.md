@@ -11,3 +11,5 @@ pip install Chromedriver
 You need to sign up for a Houndify Client Id and Client Key for transcribing the speech into text.
 
 To run the application first open "elasticsearch" via the terminal and also open "python speech.py" via another terminal.
+
+To alert the Voice Assistant, say  "Maame"
