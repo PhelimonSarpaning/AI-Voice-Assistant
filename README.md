@@ -9,3 +9,5 @@ pip install SpeechRecognition</br>
 pip install Chromedriver
 
 You need to sign up for a Houndify Client Id and Client Key for transcribing the speech into text.
+
+To run the application first open "elasticsearch" via the terminal and also open "python speech.py" via another terminal.
